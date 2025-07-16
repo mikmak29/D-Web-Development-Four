@@ -1,0 +1,19 @@
+@import url('https://fonts.googleapis.com/css2?family=Sansation:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Sansita:ital,wght@0,400;0,700;0,800;0,900;1,400;1,700;1,800;1,900&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+    --color-primary: #121212;
+    --color-secondary: #efefef;
+    --color-accent: #CB7428;
+    --color-gray: #939DA5;
+    --color-slate-light-blue: #7C8EA4;
+    --color-slate-dark-blue: #939DA5;
+    --color-slate-orange: #8A7970;
+    --color-bg-dark: #1E2A2F;
+    --color-bg-light: #DFDDDC;
+
+    
+}

@@ -5,5 +5,5 @@ const menuButton = () => {
         drop_list.classList.toggle("drop-list");
     }
 
-    console.log("Hello")
+    console.log("Dropdown Working")
 }

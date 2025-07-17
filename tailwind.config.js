@@ -8,12 +8,13 @@ module.exports = {
   theme: {
     extend: {
       screens: {
-        xs: "320px",
-        sm: ""
+        mobileM: "375px",
+        mobileL: "425px"
       },
       fontFamily: {
         sansation: ['Sansation', 'sans-serif'],
         sansita: ['Sansita', 'sans-serif'],
+        poppins: ['Poppins', 'sans-serif']
       },
       container: {
         center: true,

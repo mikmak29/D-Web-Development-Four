@@ -1039,27 +1039,27 @@ video {
   transition-duration: 500ms;
 }
 
-.sectin-padding{
+.section-padding{
   padding-left: 0.75rem;
   padding-right: 0.75rem;
 }
 
 @media (min-width: 768px){
-  .sectin-padding{
+  .section-padding{
     padding-left: 1.5rem;
     padding-right: 1.5rem;
   }
 }
 
 @media (min-width: 1024px){
-  .sectin-padding{
+  .section-padding{
     padding-left: 3rem;
     padding-right: 3rem;
   }
 }
 
 @media (min-width: 1280px){
-  .sectin-padding{
+  .section-padding{
     padding-left: 5rem;
     padding-right: 5rem;
   }

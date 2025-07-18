@@ -887,6 +887,13 @@ video {
   font-style: italic;
 }
 
+<<<<<<< HEAD
+=======
+.leading-none{
+  line-height: 1;
+}
+
+>>>>>>> feat/book-publication
 .tracking-wider{
   letter-spacing: 0.05em;
 }
@@ -1198,8 +1205,13 @@ video {
     padding-top: 2.5rem;
   }
 
+<<<<<<< HEAD
   .lg\:pt-14{
     padding-top: 3.5rem;
+=======
+  .lg\:pt-20{
+    padding-top: 5rem;
+>>>>>>> feat/book-publication
   }
 
   .lg\:text-2xl{
@@ -1269,10 +1281,13 @@ video {
     font-size: 3.75rem;
     line-height: 1;
   }
+<<<<<<< HEAD
 
   .xl\:text-\[18px\]{
     font-size: 18px;
   }
+=======
+>>>>>>> feat/book-publication
 }
 
 .\[\&\>li\>a\]\:font-sansita>li>a{

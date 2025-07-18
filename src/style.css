@@ -11,3 +11,11 @@
 .drop-list {
     @apply -translate-y-[0px]
 }
+
+.glance-list {
+    @apply w-full flex items-center gap-4 xl:w-[320px]
+}
+
+.glance-list-description {
+    @apply font-thin font-sansita tracking-wider leading-none
+}

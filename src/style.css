@@ -9,11 +9,19 @@
 }
 
 .nav-link {
-    @apply text-black font-sansita text-xs md:text-sm
+    @apply text-color_bg_dark font-sansita text-sm md:text-sm
 }
 
 .drop-list {
     @apply -translate-y-[0px]
+}
+
+.show-about_droplist {
+    @apply h-[175px] opacity-100 lg:h-[280px]
+}
+
+.show-more_droplist {
+    @apply h-[110px] opacity-100 lg:h-[190px]
 }
 
 .glance-list {

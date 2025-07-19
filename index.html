@@ -30,48 +30,50 @@
         </div>
         <div id="drop_list"
             class="absolute top-11 left-0 w-full bg-white h-auto pt-2 pb-4 border-2 border-t-color_accent -translate-y-[320px] transform transition-transform duration-500 md:py-4 lg:static lg:bg-white lg:pt-0 lg:pb-0 lg:-translate-y-0 lg:transition-none lg:border-none">
-            <ul
-                class="relative grid grid-cols-2 place-items-center gap-y-3 md:grid-cols-3 lg:flex lg:flex-row lg:gap-10">
-                <div class="flex flex-col gap-2">
+            <ul class="h-full relative flex flex-col items-center gap-2 lg:flex-row lg:gap-8">
+                <div class="flex flex-col items-center lg:relative">
                     <div class="flex items-center gap-1">
                         <li><a href=""
-                                class="nav-link relative tracking-widest after:absolute after:-bottom-3 after:left-2 after:w-[85%] after:h-[3px] after:bg-color_accent after:rounded-full">about
+                                class="nav-link relative tracking-widest after:absolute after:-bottom-2 after:left-2 after:w-[85%] after:h-[3px] after:bg-color_accent after:rounded-full">about
                                 remarkable 2</a></li>
-                        <svg width="20px" height="20px" stroke-width="1.7" viewBox="0 0 24 24" fill="none"
-                            xmlns="http://www.w3.org/2000/svg" color="#000">
+                        <svg onclick="aboutDropdownList()" class="cursor-pointer" width="20px" height="20px"
+                            stroke-width="1.7" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"
+                            color="#000">
                             <path d="M6 9L12 15L18 9" stroke="#000" stroke-width="1.7" stroke-linecap="round"
                                 stroke-linejoin="round"></path>
                         </svg>
                     </div>
-                    <!-- <ul
-                            class="w-[200px] h-auto py-2 flex flex-col items-center gap-2 [&>li>a]:text-white [&>li>a]:font-sansita -mt-[220px]">
-                            <li><a href="">watch the video</a></li>
-                            <li><a href="">breading on remarkable</a></li>
-                            <li><a href="">a note taking system</a></li>
-                            <li><a href="">remarkable vs cheer tabletes</a></li>
-                            <li><a href="">accessires</a></li>
-                            <li><a href="">remarkable for business</a></li>
-                        </ul> -->
-
-                    <!--  -->
+                    <ul id="about_list"
+                        class="w-full h-0 opacity-0 pt-2 flex flex-col items-center gap-[10px] nav-link [&>li>a]:font-sansita transition-all duration-500 ease-in-out cursor-none lg:absolute lg:top-10 lg:left-0 lg:w-[240px] lg:bg-white lg:px-6 lg:pt-4 lg:items-start lg:gap-6 lg:cursor-pointer">
+                        <li><a href="">watch the video</a></li>
+                        <li><a href="">breading on remarkable</a></li>
+                        <li><a href="">a note taking system</a></li>
+                        <li><a href="">remarkable vs cheer tabletes</a></li>
+                        <li><a href="">accessires</a></li>
+                        <li><a href="">remarkable for business</a></li>
+                    </ul>
                 </div>
                 <li><a href="" class="nav-link">Shop</a></li>
                 <li><a href="" class="nav-link">For business</a></li>
-                <div class="flex items-center gap-1">
-                    <li><a href="" class="nav-link">FAQ & Support</a></li>
-                    <svg width="20px" height="20px" stroke-width="1.7" viewBox="0 0 24 24" fill="none"
-                        xmlns="http://www.w3.org/2000/svg" color="#000">
-                        <path d="M6 9L12 15L18 9" stroke="#000" stroke-width="1.7" stroke-linecap="round"
-                            stroke-linejoin="round"></path>
-                    </svg>
-                </div>
-                <div class="flex items-center gap-1">
-                    <li><a href="" class="nav-link">More</a></li>
-                    <svg width="20px" height="20px" stroke-width="1.7" viewBox="0 0 24 24" fill="none"
-                        xmlns="http://www.w3.org/2000/svg" color="#000">
-                        <path d="M6 9L12 15L18 9" stroke="#000" stroke-width="1.7" stroke-linecap="round"
-                            stroke-linejoin="round"></path>
-                    </svg>
+                <li><a href="" class="nav-link">FAQ & Support</a></li>
+                <div class="flex flex-col items-center lg:relative">
+                    <div class="flex items-center gap-1">
+                        <li><a href="" class="nav-link">More</a></li>
+                        <svg onclick="moreDropdownList()" class="cursor-pointer" width="20px" height="20px"
+                            stroke-width="1.7" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"
+                            color="#000">
+                            <path d="M6 9L12 15L18 9" stroke="#000" stroke-width="1.7" stroke-linecap="round"
+                                stroke-linejoin="round">
+                            </path>
+                        </svg>
+                    </div>
+                    <ul id="more_list"
+                        class="w-full h-0 opacity-0 pt-1 flex flex-col items-center gap-2 nav-link [&>li>a]:font-sansita transition-all duration-500 ease-in-out cursor-none lg:absolute lg:top-10 lg:left-0 lg:w-[150px] lg:bg-white lg:px-6 lg:pt-4 lg:items-start lg:gap-6 lg:cursor-pointer">
+                        <li><a href="">blog</a></li>
+                        <li><a href="">room to think</a></li>
+                        <li><a href="">my remarkable</a></li>
+                        <li><a href="">about</a></li>
+                    </ul>
                 </div>
                 <div
                     class="w-28 h-9 bg-color_accent rounded-full flex justify-center items-center gap-2  lg:w-32 lg:h-10 lg:absolute lg:-top-2 lg:right-7">

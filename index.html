@@ -17,8 +17,8 @@
                 <h1 class="text-xl font-sansation text-black">re<span class="font-semibold">M</span>arkable</h1>
             </div>
             <div class="flex items-center lg:hidden">
-                <svg onclick="menuButton()" width="24px" height="24px" stroke-width="1.7" viewBox="0 0 24 24"
-                    fill="none" xmlns="http://www.w3.org/2000/svg" color="#CB7428">
+                <svg onclick="menuButton()" class="cursor-pointer" width="24px" height="24px" stroke-width="1.7"
+                    viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" color="#CB7428">
                     <path d="M3 5H21" stroke="#CB7428" stroke-width="1.7" stroke-linecap="round"
                         stroke-linejoin="round"></path>
                     <path d="M3 12H21" stroke="#CB7428" stroke-width="1.7" stroke-linecap="round"
@@ -29,14 +29,14 @@
             </div>
         </div>
         <div id="drop_list"
-            class="absolute top-11 left-0 w-full bg-white h-auto pt-2 pb-4 border-2 border-t-color_accent -translate-y-[320px] transform transition-transform duration-500 md:py-4 lg:static lg:bg-white lg:pt-0 lg:pb-0 lg:-translate-y-0 lg:transition-none lg:border-none">
+            class="absolute -top-[250px] left-0 w-full bg-white h-auto pt-2 pb-4 border-2 border-t-color_accent translate-y-0 transform transition-transform duration-500 md:py-4 lg:static lg:pt-0 lg:pb-0 lg:-translate-y-0 lg:transition-none lg:border-none">
             <ul class="h-full relative flex flex-col items-center gap-2 lg:flex-row lg:gap-8">
                 <div class="flex flex-col items-center lg:relative">
                     <div class="flex items-center gap-1">
                         <li><a href=""
                                 class="nav-link relative tracking-widest after:absolute after:-bottom-2 after:left-2 after:w-[85%] after:h-[3px] after:bg-color_accent after:rounded-full">about
                                 remarkable 2</a></li>
-                        <svg onclick="aboutDropdownList()" class="cursor-pointer" width="20px" height="20px"
+                        <svg onmouseover="aboutDropdownListShow()" class="cursor-pointer" width="20px" height="20px"
                             stroke-width="1.7" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"
                             color="#000">
                             <path d="M6 9L12 15L18 9" stroke="#000" stroke-width="1.7" stroke-linecap="round"
@@ -44,7 +44,7 @@
                         </svg>
                     </div>
                     <ul id="about_list"
-                        class="w-full h-0 opacity-0 pt-2 flex flex-col items-center gap-[10px] nav-link [&>li>a]:font-sansita transition-all duration-500 ease-in-out cursor-none lg:absolute lg:top-10 lg:left-0 lg:w-[240px] lg:bg-white lg:px-6 lg:pt-4 lg:items-start lg:gap-6 lg:cursor-pointer">
+                        class="w-full h-0 opacity-0 -z-10 pt-2 flex flex-col items-center gap-[10px] [&>li>a]:nav-link [&>li>a]:text-xs [&>li>a]:font-sansita cursor-pointer transition-all duration-500 ease-in-out lg:absolute lg:top-10 lg:left-0 lg:w-[240px] lg:bg-white lg:px-6 lg:pt-4 lg:items-start lg:gap-6">
                         <li><a href="">watch the video</a></li>
                         <li><a href="">breading on remarkable</a></li>
                         <li><a href="">a note taking system</a></li>
@@ -59,7 +59,7 @@
                 <div class="flex flex-col items-center lg:relative">
                     <div class="flex items-center gap-1">
                         <li><a href="" class="nav-link">More</a></li>
-                        <svg onclick="moreDropdownList()" class="cursor-pointer" width="20px" height="20px"
+                        <svg onmouseenter="moreDropdownListShow()" class="cursor-pointer" width="20px" height="20px"
                             stroke-width="1.7" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"
                             color="#000">
                             <path d="M6 9L12 15L18 9" stroke="#000" stroke-width="1.7" stroke-linecap="round"
@@ -68,7 +68,7 @@
                         </svg>
                     </div>
                     <ul id="more_list"
-                        class="w-full h-0 opacity-0 pt-1 flex flex-col items-center gap-2 nav-link [&>li>a]:font-sansita transition-all duration-500 ease-in-out cursor-none lg:absolute lg:top-10 lg:left-0 lg:w-[150px] lg:bg-white lg:px-6 lg:pt-4 lg:items-start lg:gap-6 lg:cursor-pointer">
+                        class="w-full h-0 opacity-0 -z-10 pt-1 flex flex-col items-center gap-2 [&>li>a]:nav-link [&>li>a]:text-xs [&>li>a]:font-sansita cursor-pointer transition-all duration-500 ease-in-out lg:absolute lg:top-10 lg:left-0 lg:w-[150px] lg:bg-white lg:px-6 lg:pt-4 lg:items-start lg:gap-6">
                         <li><a href="">blog</a></li>
                         <li><a href="">room to think</a></li>
                         <li><a href="">my remarkable</a></li>

@@ -9,19 +9,19 @@
 }
 
 .nav-link {
-    @apply text-color_bg_dark font-sansita text-sm md:text-sm
+    @apply text-color_bg_dark font-sansita text-sm cursor-pointer md:text-sm
 }
 
 .drop-list {
-    @apply -translate-y-[0px]
+    @apply translate-y-[293px]
 }
 
 .show-about_droplist {
-    @apply h-[175px] opacity-100 lg:h-[280px]
+    @apply h-[200px] opacity-100 z-0 lg:h-[300px]
 }
 
 .show-more_droplist {
-    @apply h-[110px] opacity-100 lg:h-[190px]
+    @apply h-[130px] opacity-100 z-0 lg:h-[200px]
 }
 
 .glance-list {
